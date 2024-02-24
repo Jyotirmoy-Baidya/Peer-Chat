@@ -105,7 +105,7 @@ let createPeerConnection = async (MemberId) => {
     document.getElementById("user-2").srcObject = remoteStream;
 
     if (!localStream) {
-        localStream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false });
+        localStream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
         document.getElementById('user-1').srcObject = localStream;
     }
 
