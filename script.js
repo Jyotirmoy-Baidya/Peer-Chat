@@ -59,7 +59,7 @@ let init = async () => {
     client.on("MessageFromPeer", handleMessageFromPeer);
 
     //function that seeks permission to acces camera and audio
-    localStream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false });
+    localStream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
 
     document.getElementById('user-1').srcObject = localStream;
     //srcObject is a property of  html media elements (video or audio) that allows us to stream our MediaStream into it.
