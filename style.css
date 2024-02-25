@@ -4,6 +4,10 @@
     gap: 2rem;
 }
 
+#user-1{
+    transform: scaleX(-1);
+}
+
 .video-player {
     background-color: blueviolet;
     width: 100%;
